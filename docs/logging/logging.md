@@ -1,42 +1,21 @@
-# Logging
 
-!!! tip
-    Consider using the website at [https://carl.gg](https://carl.gg)
-	
-### Quick Start
-	
-1. Choose a channel with **!log channel &lt;\#channel&gt;**
-2. Select which events you want logged with **!log &lt;event&gt;** where event is an event found at the bottom of this page
-3. Split up logging into separate channels by using the commands found below
-
-!!! tip "Easy Setup"
-    The `!log aio` command automatically creates a category, fills it with five channels and splits up logging into them.
-
-???+ tldr "Logging Commands"
 
 	| Command | Example | Usage |
 	| :--- | :--- | :--- |
-	| **log channel \[\#channel\]** | !log channel \#logs | Sets the default channel where logged events go. Leave empty to clear the channel. |
+	| **log channel \[\#logs\]** | !log channel \#logs | Sets the default channel where logged events go. Leave empty to clear the channel. |
 	| **log \[event\]** | !log channelcreate | Toggles an event from being logged or not. Leave blank to see current settings. |
-	| **log messagechannel \[\#channel\]** | !log messagechannel \#msglog | Sets the channel where message events are logged. |
-	| **log memberchannel \[\#channel\]** | !log memberchannel \#member-logs | Sets the channel where member events are logged. |
-	| **log joinchannel \[\#channel\]** | !log joinchannel \#hello-bye | Sets the channel where the bot logs members joining and leaving. |
-	| **log serverchannel \[\#channel\]** | !log serverchannel \#server-updates | Sets the channel where updates to the server itself are logged. |
-	| **log voicechannel \[\#channel\]** | !log voicechannel \#spying | Sets the channel where members joining/moving between/leaving voice channels are logged. |
+	| **log messagechannel \[\#logs\]** | !log messagechannel \#msglog | Sets the channel where message events are logged. |
+	| **log memberchannel \[\#logs\]** | !log memberchannel \#member-logs | Sets the channel where member events are logged. |
+	| **log joinchannel \[\#logs\]** | !log joinchannel \#hello-bye | Sets the channel where the bot logs members joining and leaving. |
+	| **log serverchannel \[\#logs\]** | !log serverchannel \#server-updates | Sets the channel where updates to the server itself are logged. |
+	| **log voicechannel \[\#logs\]** | !log voicechannel \#spying | Sets the channel where members joining/moving between/leaving voice channels are logged. |
 	| **log ignore &lt;channels/members...&gt;** | !log ignore @Carl\#0001 \#bilderberg \#secret-shhh | Ignores message events posted in the channels or by the members. |
 	| **log unignore &lt;channels/members...&gt;** | !log unignore @Carl\#0001 \#bilderberg | Unignores the previous ignores. |
 	| **log \[prefix\|ip\] &lt;prefix&gt;** | !log ip ! | Ignores message deletions, edits and messages within purges starting with the prefixes. |
 	| **log \[removeprefix\|up\] &lt;prefix&gt;** | !log up ? | Unignores previously added prefixes. |
 	| **log export** | !log export | Exports the settings used in this server to be used with the next command. |
 	| **log \[import\|custom\] &lt;perms&gt;** | !log import 1337 | Imports some settings. |
-	| **log aio** | !log aio | Creates a category, fills it with five channels and splits up logging into them. |
-
-### Event List
-
-???+ tldr "Event List"
-
-	Each event that Carl-bot logs has an associated value and channel.<br>The values are only there for ultra-nerds, don't worry about it.
-	
+	| **log aio** | !log aio | Creates a category, fills it with five channels and splits up logging into them. |	
 	| Event | Associated logging | Value | Channel |
 	| :--- | :--- | ---: | :---: |
 	| delete | Deleted messages | 1 | messagechannel |
